@@ -1,0 +1,25 @@
+body {
+    margin: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+nav li {
+    margin: 5px;
+}
+nav a {
+    text-decoration-line: none;
+}
+nav a:hover {
+    border-top: 5px solid rgb(0, 101, 252);
+}
+nav a:visited {
+    color: rgb(0, 101, 252);
+}
