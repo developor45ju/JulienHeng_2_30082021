@@ -33,3 +33,18 @@ nav a:hover {
     font-weight: bold;
     border-top: none;
 }
+#champ_recherche, #icon_localisation {
+    border: 1px solid rgb(242, 242, 242);
+    text-align: center;
+}
+#bouton_recherche {
+    border: 1px solid rgb(0, 101, 252);
+    background-color: rgb(0, 101, 252);
+    border-radius: 0 5px 5px 0;
+    color: white;
+    position: relative;
+    right: 8px;
+}
+#icon_localisation {
+    background-color: rgb(242, 242, 242);
+}
