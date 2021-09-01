@@ -1,5 +1,9 @@
 body {
-    margin: 10px;
+    margin: 75px;
+}
+header img {
+    height: 10%;
+    width: 10%;
 }
 nav {
     display: flex;
@@ -12,14 +16,20 @@ nav ul {
     align-items: center;
 }
 nav li {
-    margin: 5px;
+    margin: 25px;
 }
 nav a {
     text-decoration-line: none;
 }
+nav a:visited {
+    color: black;
+}
 nav a:hover {
     border-top: 5px solid rgb(0, 101, 252);
-}
-nav a:visited {
     color: rgb(0, 101, 252);
+}
+#element_inscrire {
+    color: rgb(0, 101, 252);
+    font-weight: bold;
+    border-top: none;
 }
