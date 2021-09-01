@@ -36,15 +36,41 @@ nav a:hover {
 #champ_recherche, #icon_localisation {
     border: 1px solid rgb(242, 242, 242);
     text-align: center;
+    padding: 10px;
 }
 #bouton_recherche {
     border: 1px solid rgb(0, 101, 252);
     background-color: rgb(0, 101, 252);
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 15px 15px 0;
     color: white;
     position: relative;
     right: 8px;
+    padding: 10px;
 }
 #icon_localisation {
     background-color: rgb(242, 242, 242);
+    position: relative;
+    left: 6px;
+    border-radius: 15px 0 0 15px;
+}
+#filtre_par_categorie, .icon_par_categorie {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.icon_par_categorie {
+    margin-left: 2em;
+    border: 3px solid rgb(217, 217, 217);
+    border-radius: 3em;
+}
+.icon_filtre {
+    border: 3px solid rgb(217, 217, 217);
+    border-radius: 2em;
+    padding: 1em;
+    position: relative;
+    right: 3px;
+    background-color: rgb(222, 235, 255);
+}
+.icon_par_categorie > p {
+    margin: 0 1.5em 0 1.5em;
 }
