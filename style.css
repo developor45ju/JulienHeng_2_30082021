@@ -70,25 +70,29 @@ input {
     border-radius: 3em;
 }
 .icon_filtre {
-    border: 1px solid rgb(217, 217, 217);
-    padding: 0.5em;
-    position: relative;
-    border-radius: 50%;
-    padding: 10px;
-    right: 3px;
+    border: 0.1px solid gray;
     background-color: rgb(222, 235, 255);
     color: rgb(0, 101, 252);
+    border-radius: 100%;
+    padding: 15px;
+    height: 3px;
+    width: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > p .icon_filtre {
+    background-color: white;
+    font-size: xx-small;
+    margin-right: 10px;
+}
+header > p {
+    display: flex;
+    align-items: center;
 }
 .icon_par_categorie > p {
     margin: 0 1.5em 0 1.5em;
     font-weight: bold;
-}
-header > p i {
-    color: rgb(0, 101, 252);
-    border: 0.5px solid rgb(217, 217, 217);
-    border-radius: 100px;
-    padding: 5px;
-    font-size: small;
 }
 #deux_sections {
     display: flex;
