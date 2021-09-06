@@ -98,6 +98,9 @@ header > p {
     display: flex;
     justify-content: space-between;
 }
+.hebergements + p {
+    font-weight: bold;
+}
 #hebergements_a_marseille {
     border: 1px solid rgb(242, 242, 242);
     background-color: rgb(242, 242, 242);
@@ -109,6 +112,13 @@ header > p {
     border: 2px solid white;
     border-radius: 2em;
     background-color: white;
+    margin-bottom: 2em;
+}
+.hebergements > p {
+    position: relative;
+    left: 10px;
+    margin-top: 0.5px;
+    padding-bottom: 1px;
 }
 #cartes {
     display: flex;
@@ -122,8 +132,14 @@ header > p {
     border: 2px solid white;
     border-radius: 2em 2em 0 0;
 }
-.hebergements p {
-    padding-left: 4px;
+.cout {
+    font-weight: bold;
+}
+.etoile {
+    color: rgb(0, 101, 252);
+}
+.etoile_desactive {
+color: rgb(242, 242 ,242);
 }
 #les_plus_populaires {
     border: 1px solid rgb(242, 242, 242);
