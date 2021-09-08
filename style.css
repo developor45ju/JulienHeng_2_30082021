@@ -1,6 +1,10 @@
 body {
-    margin: 75px;
+    margin: 0;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+header, #deux_sections, #activites_a_marseille {
+    max-width: 80em;
+    margin: 0 5em 0 5em;
 }
 header img {
     height: 10%;
@@ -28,7 +32,7 @@ nav a:visited {
 }
 nav a:hover {
     border-top: 5px solid rgb(0, 101, 252);
-    padding-top: 7em;
+    padding-top: 2.25em;
     color: rgb(0, 101, 252);
 }
 #element_inscrire {
@@ -63,6 +67,10 @@ input {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    font-weight: bold;
+}
+#filtre_par_categorie, #filtre_par_categorie p {
+    align-items: center;
 }
 .icon_par_categorie {
     margin-left: 2em;
@@ -70,7 +78,6 @@ input {
     border-radius: 3em;
 }
 .icon_filtre {
-    border: 0.1px solid gray;
     background-color: rgb(222, 235, 255);
     color: rgb(0, 101, 252);
     border-radius: 100%;
@@ -80,6 +87,19 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#icon_info {
+    height: 5px;
+    width: 5px;
+    padding: 5px;
+    border: 0.5px solid gray;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-small;
+    color: rgb(0, 101, 252);
+    margin-right: 5px;
 }
 header > p .icon_filtre {
     background-color: white;
@@ -113,6 +133,7 @@ header > p {
     border-radius: 2em;
     background-color: white;
     margin-bottom: 2em;
+    box-shadow: 2px 2px 2px black;
 }
 .hebergements > p {
     position: relative;
@@ -139,7 +160,7 @@ header > p {
     color: rgb(0, 101, 252);
 }
 .etoile_desactive {
-color: rgb(242, 242 ,242);
+    color: rgb(242, 242 ,242);
 }
 #les_plus_populaires {
     border: 1px solid rgb(242, 242, 242);
@@ -155,20 +176,40 @@ color: rgb(242, 242 ,242);
     border: 2px solid white;
     border-radius: 2em 0 0 2em;
 }
-.populaires {
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid white;
+.cartes_populaires {
+    border: 1px solid white;
     background-color: white;
     border-radius: 2em;
 }
+#populaires {
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
 .cote {
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    font-size: small;
+}
+.cote, .cartes_populaires {
+    display: flex;
+}
+#aligner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.espace_plus_petit {
+    margin-top: -10px;
 }
 .text_important {
     font-weight: bold;
-    display: flex;
-    align-content: flex-start;
+}
+.activites {
+    border: 5px solid rgb(247, 247, 247);
+    border-radius: 2em;
 }
 #activites_cartes {
     display: flex;
@@ -189,8 +230,8 @@ color: rgb(242, 242 ,242);
     object-fit: cover;
 }
 .mode_paysage_grand {
-    height: 15em;
-    width: 20em;
+    height: 13em;
+    width: 18em;
     object-fit: cover;
 }
 .mode_paysage_petit {
@@ -200,5 +241,12 @@ color: rgb(242, 242 ,242);
 }
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    width: auto;
+    margin-top: 5em;
+    background-color: rgb(242, 242, 242);
+    padding: 2.5em;
+}
+footer div {
+    margin-right: 15em;
 }
