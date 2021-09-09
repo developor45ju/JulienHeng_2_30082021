@@ -1,3 +1,5 @@
+/*Les propriétés de la corp de la page*/
+
 body {
     margin: 0;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
@@ -6,6 +8,9 @@ header, #deux_sections, #activites_a_marseille {
     max-width: 80em;
     margin: 0 5em 0 5em;
 }
+
+/*Stylisation de l'entête (barre de navigation, logo, barre de recherhce...)*/
+
 header img {
     height: 10%;
     width: 10%;
@@ -114,6 +119,9 @@ header > p {
     margin: 0 1.5em 0 1.5em;
     font-weight: bold;
 }
+
+/*Stylisation des deux première sections (hébergement à Marseille et les plus populaires)*/
+
 #deux_sections {
     display: flex;
     justify-content: space-between;
@@ -210,6 +218,9 @@ header > p {
 .text_important {
     font-weight: bold;
 }
+
+/*Stylisation dee la section activités à Marseille*/
+
 .activites {
     border: 5px solid rgb(247, 247, 247);
     border-radius: 2em;
@@ -242,6 +253,9 @@ header > p {
     width: 20em;
     object-fit: cover;
 }
+
+/*Stylisation du pied de page*/
+
 footer {
     display: flex;
     justify-content: flex-start;
