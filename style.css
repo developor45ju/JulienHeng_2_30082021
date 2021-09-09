@@ -226,6 +226,9 @@ header > p {
     border: 5px solid rgb(247, 247, 247);
     border-radius: 2em;
 }
+.activites p {
+    padding-left: 1em;
+}
 #activites_cartes {
     display: flex;
     justify-content: space-between;
@@ -238,20 +241,22 @@ header > p {
 .activites_en_colone {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 .activites_mode_portrait {
-    height: 28em;
-    width: 19em;
+    height: 22em;
+    width: 16em;
     object-fit: cover;
 }
 .mode_paysage_grand {
-    height: 13em;
+    height: 10em;
     width: 18em;
     object-fit: cover;
 }
 .mode_paysage_petit {
-    height: 10em;
-    width: 20em;
+    height: 5em;
+    width: 19em;
     object-fit: cover;
 }
 
