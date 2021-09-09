@@ -2,10 +2,12 @@
 
 body {
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 header, #deux_sections, #activites_a_marseille {
-    max-width: 80em;
     margin: 0 5em 0 5em;
 }
 
@@ -74,13 +76,13 @@ input {
     margin-top: 10px;
     font-weight: bold;
 }
-#filtre_par_categorie, #filtre_par_categorie p {
-    align-items: center;
-}
 .icon_par_categorie {
     margin-left: 2em;
     border: 1px solid rgb(217, 217, 217);
     border-radius: 3em;
+}
+.icon_par_categorie:hover {
+    background-color: rgb(217, 217, 217);
 }
 .icon_filtre {
     background-color: rgb(222, 235, 255);
@@ -141,7 +143,10 @@ header > p {
     border-radius: 2em;
     background-color: white;
     margin-bottom: 2em;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 1px 2px 1rem black;
+}
+.hebergements:hover {
+    box-shadow: 1em 1em 10px black;
 }
 .hebergements > p {
     position: relative;
@@ -188,7 +193,10 @@ header > p {
     border: 1px solid white;
     background-color: white;
     border-radius: 2em;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 1px 2px 10px black;
+}
+.cartes_populaires:hover {
+    box-shadow: 1em 1em 10px black;
 }
 #populaires {
     height: 35em;
@@ -223,8 +231,11 @@ header > p {
 /*Stylisation dee la section activités à Marseille*/
 
 .activites {
-    border: 5px solid rgb(247, 247, 247);
+    box-shadow: 1px 2px 10px black;
     border-radius: 2em;
+}
+.activites:hover {
+    box-shadow: 1em 1em 10px black;
 }
 .activites p {
     padding-left: 1em;
@@ -234,7 +245,7 @@ header > p {
     justify-content: space-between;
 }
 #activites_cartes img {
-    border: 0.5px solid rgb(254, 254, 254);
+    border: none solid rgb(254, 254, 254);
     background-color: rgb(245, 245, 245);
     border-radius: 2em 2em 0 0;
 }
@@ -268,8 +279,29 @@ footer {
     width: auto;
     margin-top: 5em;
     background-color: rgb(242, 242, 242);
-    padding: 2.5em;
+    padding: 5em;
 }
 footer div {
     margin-right: 15em;
+}
+footer ul {
+    list-style-type: none;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    border-bottom: 0.5px solid black;
+}
+
+/*Adaptation du site pour les mobiles de mobiles de 375 pixels*/
+
+@media screen and (max-width: 350px) {
+    body {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
