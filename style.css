@@ -36,6 +36,9 @@ nav a {
     text-decoration-line: none;
     color: black;
 }
+#liens_vers_ancres {
+    display: flex;
+}
 nav a:visited {
     color: black;
 }
@@ -49,9 +52,13 @@ nav a:hover {
     font-weight: bold;
     border-top: none;
 }
-#champ_recherche, #icon_localisation {
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#champ_recherche, #bouton_recherche {
     border: 1px solid rgb(242, 242, 242);
-    text-align: center;
     padding: 10px;
 }
 #bouton_recherche {
@@ -59,22 +66,21 @@ nav a:hover {
     background-color: rgb(0, 101, 252);
     border-radius: 0 15px 15px 0;
     color: white;
-    position: relative;
-    right: 8px;
-    padding: 10px;
 }
 #icon_localisation {
     background-color: rgb(242, 242, 242);
-    position: relative;
-    left: 6px;
-    top: 0.5px;
     border-radius: 15px 0 0 15px;
+    border: 1px solid rgb(242, 242, 242);
+    padding: 11.5px;
 }
 input {
     font-weight: bold;
 }
 #filtres {
     display: flex;
+}
+#filtres p {
+    padding: 0;
 }
 #filtre_par_categorie, .icon_par_categorie, #filtre_par_categorie {
     display: flex;
@@ -101,6 +107,9 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#filtres p {
+    margin: 0;
 }
 #info {
     display: flex;
@@ -154,11 +163,11 @@ header > p {
     border-radius: 2em;
     background-color: white;
     margin-bottom: 2em;
-    box-shadow: 1px 2px 1rem black;
+    box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
     width: 25%;
 }
 .hebergements:hover {
-    box-shadow: 1em 1em 10px black;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.4);
 }
 .hebergements > p {
     position: relative;
@@ -208,10 +217,10 @@ header > p {
     border: 1px solid white;
     background-color: white;
     border-radius: 2em;
-    box-shadow: 1px 2px 10px black;
+    box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
 }
 .cartes_populaires:hover {
-    box-shadow: 1em 1em 10px black;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.4);
 }
 #populaires {
     height: 35em;
@@ -246,11 +255,11 @@ header > p {
 /*Stylisation dee la section activités à Marseille*/
 
 .activites {
-    box-shadow: 1px 2px 10px black;
+    box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
     border-radius: 2em;
 }
 .activites:hover {
-    box-shadow: 1em 1em 10px black;
+    box-shadow: 5px 5px 15px rgb(0,0,0,0.4);
 }
 .activites p {
     padding-left: 1em;
@@ -328,10 +337,9 @@ footer a:hover {
     nav {
         flex-flow: row wrap;
         justify-content: center;
-        border-bottom: 2px solid rgb(242, 242 ,242);
     }
     nav ul {
-        justify-content: space-around;
+        display: block;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -341,32 +349,47 @@ footer a:hover {
         border-top: none;
         color: none;
     }
-    .liens_ancres:hover {
-        border-bottom: 4px solid rgb(0, 101, 252);
+    nav li {
+        margin: 0;
     }
-    .liens_ancres {
-        padding: 0 50% 1.8em 50%;
+    #liens_vers_ancres {
+        margin-top: 3em;
+        margin-bottom: 1em;
+        height: 2em;
+    }
+    #liens_vers_ancres a:hover {
+        border-bottom: 4px solid rgb(0, 101, 252);
+        padding-bottom: 1em;
+    }
+    #liens_vers_ancres a {
+        position: relative;
+        display: flex;
+        width: 13.15em;
+        border-bottom: 2px solid rgb(242, 242 ,242);
+        padding-bottom: 1em;
+        justify-content: center;
     }
     nav img {
-        position: relative;
-        right: 8em;
-        height: 2.5em;
+        position: absolute;
+        left: 2em;
+        top: 0em;
+        height: 2em;
         width: 5em;
     }
     li:last-child {
         margin: 0;
     }
-    header h2, p, form, #info, #filtre_par_categorie {
-        margin-left: 2em;
+    header p, form, #info, #filtre_par_categorie {
+        margin: 0 2em;
+        padding: 0.5em 0;
+    }
+    header h2 {
+        margin: 0 2em 0 1.3em;
     }
     #element_inscrire {
         position: absolute;
-        top: 0.8em;
-        right: -6em;
-    }
-    form {
-        display: flex;
-        justify-content: flex-start;
+        top: 0.5em;
+        right: 2em;
     }
     #deux_sections, #activites_a_marseille {
         margin: 0 1em;
@@ -378,7 +401,10 @@ footer a:hover {
         display: block;
     }
     #filtre_par_categorie p {
-        margin-left: 0;
+        margin: 0;
+    }
+    #filtres p {
+        padding: 0 1em;
     }
     #aligner {
         display: flex;
@@ -442,6 +468,10 @@ footer a:hover {
     #activites_cartes {
         display: block;
     }
+    #activites_cartes p {
+        position: relative;
+        bottom: 10px;
+    }
     .activites {
         display: block;
     }
@@ -471,10 +501,6 @@ footer a:hover {
     }
     #filtres {
         flex-wrap: wrap;
-    }
-    #filtre_par_categorie p {
-        margin: 0;
-        padding: 0 1em;
     }
     #activites_a_marseille {
         display: block;
