@@ -182,9 +182,8 @@ header > p {
 }
 .hebergements img {
     height: 7em;
-    width: 98.5%;
+    width: 100%;
     object-fit: cover;
-    border: 2px solid white;
     border-radius: 2em 2em 0 0;
 }
 #plus_onglets {
