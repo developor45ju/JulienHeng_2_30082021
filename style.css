@@ -19,25 +19,17 @@ header img {
     width: 10%;
 }
 nav {
+    margin-top: 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul {
+#barre_de_navigation {
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    align-items: center;
 }
-nav li {
-    margin: 25px;
-}
-nav a {
-    text-decoration-line: none;
-    color: black;
-}
-#liens_vers_ancres {
-    display: flex;
+#barre_de_navigation a {
+    margin: 0 1em;
+    text-decoration: none;
 }
 nav a:visited {
     color: black;
@@ -351,45 +343,50 @@ footer a:hover {
         flex-flow: row wrap;
         justify-content: center;
     }
-    nav ul {
-        display: block;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-    }
     nav a:hover {
         padding-top: 0;
         border-top: none;
         color: none;
     }
-    nav li {
-        margin: 0;
-    }
-    #liens_vers_ancres {
-        margin-top: 3em;
-        margin-bottom: 1em;
-        height: 2em;
+    #barre_de_navigation {
         display: flex;
         justify-content: space-around;
+        width: 100%;
     }
-    #liens_vers_ancres a:hover {
-        border-bottom: 4px solid rgb(0, 101, 252);
-        padding-bottom: 1em;
+    #liens_vers_ancres {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3em;
+        margin-bottom: 2em;
+        width: 100%;
     }
     #liens_vers_ancres a {
-        width: 100%;
-        border-bottom: 2px solid rgb(242, 242 ,242);
+        margin: 0;
+        border-bottom: 3px solid rgb(242, 242 ,242);
         padding-bottom: 1em;
+        width: 100%;
+        text-align: center;
+    }
+    #liens_vers_ancres a:hover {
+        text-align: center;
+        border-bottom: 3px solid rgb(0, 101, 252);
+        padding-bottom: 1em;
+        width: 100%;
+    }
+    .liens_ancres {
+        display: flex;
+        justify-content: center;
+        width: 50%;
     }
     nav img {
         position: absolute;
         left: 2em;
         top: 0em;
-        height: 2em;
+        height: 4em;
         width: 10em;
     }
-    li:last-child {
-        margin: 0;
+    #icon_localisation {
+        width: 5%;
     }
     header p, form, #info, #filtre_par_categorie {
         margin: 0 2em;
@@ -400,7 +397,7 @@ footer a:hover {
     }
     #element_inscrire {
         position: absolute;
-        top: 0.5em;
+        top: 1.5em;
         right: 2em;
     }
     #deux_sections, #activites_a_marseille {
@@ -477,9 +474,15 @@ footer a:hover {
     }
     #activites_a_marseille {
         margin: 2em;
+        height: 100%;
+    }
+    .bloc_de_3_cartes {
+        display: block;
+        width: auto;
     }
     #activites_cartes {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     #activites_cartes p {
         position: relative;
