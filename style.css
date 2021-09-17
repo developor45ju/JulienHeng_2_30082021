@@ -55,11 +55,13 @@ nav a:hover {
 form {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    height: 2em;
 }
-#champ_recherche, #bouton_recherche {
+#champ_recherche, #bouton_recherche, #icon_localisation {
     border: 1px solid rgb(242, 242, 242);
-    padding: 10px;
+}
+#champ_recherche {
+    text-align: center;
 }
 #bouton_recherche {
     border: 1px solid rgb(0, 101, 252);
@@ -70,12 +72,12 @@ form {
 #icon_localisation {
     display: flex;
     align-items: center;
-    width: 25px;
+    width: 2%;
+    height: auto;
     justify-content: center;
     background-color: rgb(242, 242, 242);
     border-radius: 15px 0 0 15px;
     border: 1px solid rgb(242, 242, 242);
-    height: 36.7px;
 }
 input {
     font-weight: bold;
@@ -87,6 +89,7 @@ input {
 }
 #filtres p {
     padding: 0 15px;
+    font-size: 125%;
 }
 #filtre_par_categorie, .icon_par_categorie, #filtre_par_categorie {
     display: flex;
@@ -259,6 +262,11 @@ header > p {
 
 /*Stylisation dee la section activités à Marseille*/
 
+.bloc_de_3_cartes {
+    display: flex;
+    width: 47%;
+    justify-content: space-between;
+}
 .activites {
     box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
     border-radius: 2em;
@@ -361,18 +369,17 @@ footer a:hover {
         margin-top: 3em;
         margin-bottom: 1em;
         height: 2em;
+        display: flex;
+        justify-content: space-around;
     }
     #liens_vers_ancres a:hover {
         border-bottom: 4px solid rgb(0, 101, 252);
         padding-bottom: 1em;
     }
     #liens_vers_ancres a {
-        position: relative;
-        display: flex;
-        width: 13.15em;
+        width: 100%;
         border-bottom: 2px solid rgb(242, 242 ,242);
         padding-bottom: 1em;
-        justify-content: center;
     }
     nav img {
         position: absolute;
@@ -450,8 +457,8 @@ footer a:hover {
         align-items: center;
     }
     .hebergements img {
-        object-fit: cover;
-        width: 99%
+        width: 100%;
+        border: 0;
     }
     #plus_onglets {
         margin-left: 1.5em;
@@ -501,10 +508,6 @@ footer a:hover {
 /*Adaptation des tablettes de 768 pixels à 1800 pixels*/
 
 @media only screen and (min-width: 768px) and (max-width: 1500px) {
-    #deux_sections {
-        margin: 0 5em;
-        width: 100%;
-    }
     nav img {
         height: 15%;
         width: 15%;
@@ -515,10 +518,10 @@ footer a:hover {
         justify-content: space-between;
     }
     #filtre_par_categorie {
-        align-items: flex-start;
+        align-items: center;
     }
     #filtre_par_categorie > p {
-        margin: 0;
+        margin-top: 0;
     }
     .icon_par_categorie {
         margin-bottom: 1em;
@@ -536,15 +539,32 @@ footer a:hover {
     }
     #hebergements_a_marseille {
         width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .hebergements img {
+        width: 100%;
+        justify-content: center;
+    }
+    #plus_onglets, #logement_coucher {
+        margin-left: 4%;
     }
     #cartes {
-        justify-content: flex-start;
+        justify-content: space-around;
     }
     #les_plus_populaires {
         margin-top: 1em;
         justify-content: center;
-        flex-flow: row wrap;
         width: 100%;
+        padding: 0;
+        height: 22.5em;
+    }
+    #aligner {
+        margin: 0 4%;
+    }
+    #populaires {
+        justify-content: space-around;
+        height: auto;
     }
     #les_plus_populaires img {
         width: 100%;
@@ -570,6 +590,7 @@ footer a:hover {
         display: flex;
         justify-content: space-around;
         margin-bottom: 1em;
+        width: 100%;
     }
     .activites {
         width: 28.8%;
@@ -577,7 +598,10 @@ footer a:hover {
     .activites_en_colone .activites {
         width: 98%;
     }
-    .activites_mode_portrait, .mode_paysage_petit {
+    .activites_en_colone {
+        width: 30%;
+    }
+    .activites_mode_portrait, .mode_paysage_petit, .mode_paysage_grand {
         width: 100%;
     }
     footer {
