@@ -1,7 +1,7 @@
 /*Les propriétés de la corp de la page*/
 
 body {
-    margin: 0;
+    margin: 0 auto;
     max-width: 1920px;
     display: flex;
     justify-content: center;
@@ -15,8 +15,8 @@ header, #deux_sections, #activites_a_marseille {
 /*Stylisation de l'entête (barre de navigation, logo, barre de recherhce...)*/
 
 header img {
-    height: 10%;
-    width: 10%;
+    height: 63px;
+    width: 135px;
 }
 nav {
     margin-top: 1em;
@@ -24,11 +24,14 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+nav a {
+    color: black;
+}
 #barre_de_navigation {
     display: flex;
 }
 #barre_de_navigation a {
-    margin: 0 1em;
+    margin: 0 2.1em;
     text-decoration: none;
 }
 nav a:visited {
@@ -36,7 +39,7 @@ nav a:visited {
 }
 nav a:hover {
     border-top: 5px solid rgb(0, 101, 252);
-    padding-top: 2.25em;
+    padding-top: 2.1em;
     color: rgb(0, 101, 252);
 }
 #element_inscrire {
@@ -49,17 +52,24 @@ form {
     justify-content: flex-start;
     height: 2em;
 }
-#champ_recherche, #bouton_recherche, #icon_localisation {
+#champ_recherche, #icon_localisation {
     border: 1px solid rgb(242, 242, 242);
 }
 #champ_recherche {
-    text-align: center;
+    padding-left: 5px;
 }
-#bouton_recherche {
-    border: 1px solid rgb(0, 101, 252);
+button {
+    text-align: center;
     background-color: rgb(0, 101, 252);
-    border-radius: 0 15px 15px 0;
+    border: none;
+    border-radius: 0 10px 10px 0;
     color: white;
+    font-weight: bold;
+}
+button i {
+    position: absolute;
+    opacity: 100%;
+    right: 10em;
 }
 #icon_localisation {
     display: flex;
@@ -68,7 +78,7 @@ form {
     height: auto;
     justify-content: center;
     background-color: rgb(242, 242, 242);
-    border-radius: 15px 0 0 15px;
+    border-radius: 10px 0 0 10px;
     border: 1px solid rgb(242, 242, 242);
 }
 input {
@@ -154,13 +164,13 @@ header > p {
 #hebergements_a_marseille {
     border: 1px solid rgb(242, 242, 242);
     background-color: rgb(242, 242, 242);
-    border-radius: 2em;
+    border-radius: 10px;
     padding: 2em;
     width: 65%;
 }
 .hebergements {
     border: 2px solid white;
-    border-radius: 2em;
+    border-radius: 10px;
     background-color: white;
     margin-bottom: 2em;
     box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
@@ -184,7 +194,7 @@ header > p {
     height: 7em;
     width: 100%;
     object-fit: cover;
-    border-radius: 2em 2em 0 0;
+    border-radius: 10px 10px 0 0;
 }
 #plus_onglets {
     font-weight: bold;
@@ -201,7 +211,7 @@ header > p {
 #les_plus_populaires {
     border: 1px solid rgb(242, 242, 242);
     background-color: rgb(242, 242 ,242);
-    border-radius: 2em;
+    border-radius: 10px;
     padding: 2em;
     width: 23%;
 }
@@ -210,12 +220,12 @@ header > p {
     width: 7em;
     object-fit: cover;
     border: 2px solid white;
-    border-radius: 2em 0 0 2em;
+    border-radius: 10px 0 0 10px;
 }
 .cartes_populaires {
     border: 1px solid white;
     background-color: white;
-    border-radius: 2em;
+    border-radius: 10px;
     box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
 }
 .cartes_populaires:hover {
@@ -260,7 +270,7 @@ header > p {
 }
 .activites {
     box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
-    border-radius: 2em;
+    border-radius: 10px;
 }
 .activites:hover {
     box-shadow: 5px 5px 15px rgb(0,0,0,0.4);
@@ -275,7 +285,7 @@ header > p {
 #activites_cartes img {
     border: none solid rgb(254, 254, 254);
     background-color: rgb(245, 245, 245);
-    border-radius: 2em 2em 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .activites_en_colone {
     display: flex;
@@ -327,7 +337,7 @@ footer a:hover {
 
 /*Adaptation du site pour les mobiles de mobiles de 375 pixels*/
 
-@media only screen and (min-width: 340px) and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 768px) {
     body {
         display: flex;
         flex-direction: column;
@@ -381,8 +391,8 @@ footer a:hover {
         position: absolute;
         left: 2em;
         top: 0em;
-        height: 4em;
-        width: 10em;
+        width: 67.5px;
+        height: 31.5px;
     }
     #icon_localisation {
         width: 5%;
@@ -396,8 +406,24 @@ footer a:hover {
     }
     #element_inscrire {
         position: absolute;
-        top: 1.5em;
-        right: 2em;
+        top: 0.7em;
+        right: 1em;
+    }
+    #icon_localisation {
+        width: 28px;
+    }
+    button {
+        border-radius: 10px;
+    }
+    button span {
+        position: absolute;
+        right: 10em;
+        opacity: 0%;
+    }
+    button i {
+        position: relative;
+        left: 0;
+        width: 28px;
     }
     #deux_sections, #activites_a_marseille {
         margin: 0 1em;
@@ -413,6 +439,7 @@ footer a:hover {
     }
     #filtres p {
         padding: 0 1em;
+        font-size: 10px;
     }
     #aligner {
         display: flex;
@@ -422,6 +449,7 @@ footer a:hover {
         display: flex;
         flex-flow:  row wrap;
         justify-content: flex-start;
+        width: 280px;
     }
     .icon_par_categorie {
         margin: 0 1em 1em 0em
@@ -451,10 +479,6 @@ footer a:hover {
     #populaires {
         justify-content: space-around;
         align-items: center;
-    }
-    .hebergements img {
-        width: 100%;
-        border: 0;
     }
     #plus_onglets {
         margin-left: 1.5em;
@@ -510,10 +534,6 @@ footer a:hover {
 /*Adaptation des tablettes de 768 pixels à 1800 pixels*/
 
 @media only screen and (min-width: 768px) and (max-width: 1500px) {
-    nav img {
-        height: 15%;
-        width: 15%;
-    }
     #filtres {
         flex-wrap: wrap;
         margin-left: 5%;
@@ -612,10 +632,5 @@ footer a:hover {
     }
     footer div {
         margin-right: 15%;
-    }
-}
-@media only screen and (max-width: 340px) {
-    body {
-        display: none;
     }
 }
