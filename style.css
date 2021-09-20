@@ -123,13 +123,13 @@ input {
 }
 #info {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 #icon_info {
-    height: 5px;
-    width: 5px;
+    height: 15px;
+    width: 15px;
     padding: 5px;
-    border: 0.5px solid gray;
+    border: 1px solid gray;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -137,6 +137,9 @@ input {
     font-size: x-small;
     color: rgb(0, 101, 252);
     margin-right: 5px;
+}
+#icon_info i {
+    font-size: 15px
 }
 header > p .icon_filtre {
     background-color: white;
@@ -253,6 +256,9 @@ header > p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+#aligner i {
+    font-size: 23px;
 }
 .espace_plus_petit {
     margin-top: -10px;
@@ -453,6 +459,16 @@ footer a:hover {
     }
     .icon_par_categorie {
         margin: 0 1em 1em 0em
+    }
+    #info {
+        align-items: flex-start;
+    }
+    #icon_info {
+        height: 5px;
+        width: 5px;
+    }
+    #icon_info i {
+        font-size: 8px;
     }
     #deux_sections {
         display: flex;
