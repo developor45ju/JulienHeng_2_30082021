@@ -336,9 +336,9 @@ footer a:hover {
     border-bottom: 0.5px solid black;
 }
 
-/*Adaptation du site pour les mobiles de mobiles de 375 pixels*/
+/*Adaptation du site pour les mobiles de mobiles de 280px à 600 pixels*/
 
-@media only screen and (min-width: 280px) and (max-width: 768px) {
+@media only screen and (min-width: 280px) and (max-width: 600px) {
     body {
         display: flex;
         flex-direction: column;
@@ -380,7 +380,7 @@ footer a:hover {
         width: 100%;
         text-align: center;
     }
-    #liens_vers_ancres a:target {
+    #liens_vers_ancres a:focus {
         color: rgb(0, 101, 252);
         border-bottom: 3px solid rgb(0, 101, 252);
     }
@@ -546,7 +546,7 @@ footer a:hover {
 
 /*Adaptation des tablettes de 768 pixels à 1800 pixels*/
 
-@media only screen and (min-width: 768px) and (max-width: 1800px) {
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     #filtres {
         flex-wrap: wrap;
         margin-left: 5%;
