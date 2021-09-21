@@ -141,11 +141,6 @@ input {
 #icon_info i {
     font-size: 15px
 }
-header > p .icon_filtre {
-    background-color: white;
-    font-size: xx-small;
-    margin-right: 10px;
-}
 header > p {
     display: flex;
     align-items: center;
@@ -351,6 +346,9 @@ footer a:hover {
         font-size: 85%;
         width: 100%;
     }
+    nav img, #element_inscrire {
+        padding: 10px;
+    }
     header {
         margin: 0;
     }
@@ -361,7 +359,6 @@ footer a:hover {
     nav a:hover {
         padding-top: 0;
         border-top: none;
-        color: none;
     }
     #barre_de_navigation {
         display: flex;
@@ -378,15 +375,14 @@ footer a:hover {
     #liens_vers_ancres a {
         margin: 0;
         border-bottom: 3px solid rgb(242, 242 ,242);
+        color: black;
         padding-bottom: 1em;
         width: 100%;
         text-align: center;
     }
-    #liens_vers_ancres a:hover {
-        text-align: center;
+    #liens_vers_ancres a:target {
+        color: rgb(0, 101, 252);
         border-bottom: 3px solid rgb(0, 101, 252);
-        padding-bottom: 1em;
-        width: 100%;
     }
     .liens_ancres {
         display: flex;
@@ -420,6 +416,7 @@ footer a:hover {
     }
     button {
         border-radius: 10px;
+        margin-left: -10px;
     }
     button span {
         position: absolute;
@@ -549,7 +546,7 @@ footer a:hover {
 
 /*Adaptation des tablettes de 768 pixels à 1800 pixels*/
 
-@media only screen and (min-width: 768px) and (max-width: 1500px) {
+@media only screen and (min-width: 768px) and (max-width: 1800px) {
     #filtres {
         flex-wrap: wrap;
         margin-left: 5%;
@@ -616,12 +613,16 @@ footer a:hover {
     .cartes_populaires {
         width: 25%;
         flex-direction: column;
-        height: 45%;
+        height: 261px;
     }
     .cote {
         width: 100%;
-        padding-left: 0;
-        align-items: center;
+        height: 100%;
+        padding-left: 5px;
+        justify-content: space-between;
+    }
+    .espace_plus_petit {
+        margin-top: 5px;
     }
     .bloc_de_3_cartes {
         align-content: space-around;
