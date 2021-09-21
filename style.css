@@ -74,7 +74,7 @@ button i {
 #icon_localisation {
     display: flex;
     align-items: center;
-    width: 2%;
+    width: 30px;
     height: auto;
     justify-content: center;
     background-color: rgb(242, 242, 242);
@@ -86,12 +86,10 @@ input {
 }
 #filtres {
     display: flex;
-    width: 65%;
     justify-content: space-around;
 }
 #filtres p {
     padding: 0 15px;
-    font-size: 125%;
 }
 #filtre_par_categorie, .icon_par_categorie, #filtre_par_categorie {
     display: flex;
@@ -102,6 +100,7 @@ input {
 .icon_par_categorie {
     margin-top: 0;
     border: 1px solid rgb(217, 217, 217);
+    margin: 0 10px;
     border-radius: 3em;
 }
 .icon_par_categorie:hover {
@@ -544,7 +543,7 @@ footer a:hover {
     }
 }
 
-/*Adaptation des tablettes de 768 pixels à 1800 pixels*/
+/*Adaptation des tablettes de 600 pixels à 1024 pixels*/
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     #filtres {
@@ -553,7 +552,7 @@ footer a:hover {
         justify-content: space-between;
     }
     #filtre_par_categorie {
-        align-items: center;
+        align-items: fl;
     }
     #filtre_par_categorie > p {
         margin-top: 0;
@@ -602,10 +601,11 @@ footer a:hover {
         height: auto;
     }
     #les_plus_populaires img {
-        width: 100%;
-        border-radius: 2em 2em 0 0;
+        border-radius: 10px 10px 0 0;
         justify-content: center;
         border: none;
+        height: 150px;
+        width: auto;
     }
     #populaires {
         flex-direction: row;
@@ -623,6 +623,7 @@ footer a:hover {
     }
     .espace_plus_petit {
         margin-top: 5px;
+        font-size: 10px;
     }
     .bloc_de_3_cartes {
         align-content: space-around;
