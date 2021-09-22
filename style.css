@@ -265,18 +265,22 @@ header > p {
 
 .bloc_de_3_cartes {
     display: flex;
-    width: 47%;
+    width: 50%;
     justify-content: space-between;
 }
 .activites {
     box-shadow: 1px 1px 15px rgb(0,0,0,0.4);
     border-radius: 10px;
+    width: 70%;
 }
 .activites:hover {
     box-shadow: 5px 5px 15px rgb(0,0,0,0.4);
 }
 .activites p {
     padding-left: 1em;
+}
+.activites img {
+    width: 100%;
 }
 #activites_cartes {
     display: flex;
@@ -292,20 +296,24 @@ header > p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+}
+.activites_en_colone .activites {
+    width: 90%;
 }
 .activites_mode_portrait {
     height: 22em;
-    width: 16em;
+    width: 13em;
     object-fit: cover;
 }
 .mode_paysage_grand {
     height: 10em;
-    width: 18em;
+    width: 20.1em;
     object-fit: cover;
 }
 .mode_paysage_petit {
     height: 5em;
-    width: 19em;
+    width: 20.1em;
     object-fit: cover;
 }
 
@@ -509,7 +517,6 @@ footer a:hover {
     }
     #activites_a_marseille {
         margin: 2em;
-        height: 100%;
     }
     .bloc_de_3_cartes {
         display: block;
@@ -518,6 +525,7 @@ footer a:hover {
     #activites_cartes {
         display: flex;
         flex-direction: column;
+        width: auto;
     }
     #activites_cartes p {
         position: relative;
@@ -525,6 +533,7 @@ footer a:hover {
     }
     .activites {
         display: block;
+        width: auto;
     }
     #activites_a_marseille img {
         height: 10em;
@@ -532,9 +541,10 @@ footer a:hover {
     }
     .activites_en_colone {
         display: block;
+        width: 100%;
     }
-    .activites_cartes {
-        display: block;
+    .activites_en_colone .activites {
+        width: auto;
     }
     footer {
         display: block;
