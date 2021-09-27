@@ -152,6 +152,9 @@ header > p {
     margin: 0 1.5em 0 1.5em;
     font-weight: bold;
 }
+.icon_par_categorie > p:visited {
+    color: black;
+}
 
 /*Stylisation des deux première sections (hébergement à Marseille et les plus populaires)*/
 
@@ -183,6 +186,9 @@ header > p {
 .hebergements p {
     margin: 0;
     padding: 10px;
+}
+.hebergements p:visited {
+    color: black;
 }
 .hebergements {
     border: 2px solid white;
@@ -288,6 +294,9 @@ header > p {
     margin-top: -10px;
     font-size: 1.25em;
 }
+.espace_plus_petit p:hover {
+    color: black;
+}
 .text_important {
     font-weight: bold;
 }
@@ -311,6 +320,9 @@ header > p {
 .activites p {
     padding: 0.5em 0;
     text-align: center;
+}
+.activites p:visited {
+    color: black;
 }
 .activites img {
     width: 100%;
