@@ -284,6 +284,7 @@ header > p {
     font-size: 23px;
 }
 .espace_plus_petit {
+    padding-top: 10px;
     margin-top: -10px;
     font-size: 1.25em;
 }
@@ -308,7 +309,8 @@ header > p {
     box-shadow: 5px 5px 15px rgb(0,0,0,0.4);
 }
 .activites p {
-    padding-left: 1em;
+    padding: 0.5em 0;
+    text-align: center;
 }
 .activites img {
     width: 100%;
@@ -359,7 +361,7 @@ header > p {
     object-fit: cover;
 }
 .mode_paysage_petit {
-    height: 5em;
+    height: 7em;
     width: 20.1em;
     object-fit: cover;
 }
@@ -370,13 +372,11 @@ footer {
     display: flex;
     justify-content: flex-start;
     width: auto;
-    margin-top: 5em;
     background-color: rgb(242, 242, 242);
     padding: 5em;
 }
 footer div {
     margin-right: 15em;
-    
 }
 footer ul {
     list-style-type: none;
