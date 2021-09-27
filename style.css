@@ -367,6 +367,7 @@ footer {
     justify-content: flex-start;
     width: auto;
     background-color: rgb(242, 242, 242);
+    margin-top: 1em;
     padding: 5em;
 }
 footer div {
