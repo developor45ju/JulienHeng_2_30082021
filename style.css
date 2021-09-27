@@ -11,6 +11,13 @@ body {
 header, #deux_sections, #activites_a_marseille {
     margin: 0 5em 0 5em;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
 
 /*Stylisation de l'entête (barre de navigation, logo, barre de recherhce...)*/
 
@@ -24,18 +31,11 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-nav a {
-    color: black;
-}
 #barre_de_navigation {
     display: flex;
 }
 #barre_de_navigation a {
     margin: 0 2.1em;
-    text-decoration: none;
-}
-nav a:visited {
-    color: black;
 }
 nav a:hover {
     border-top: 5px solid rgb(0, 101, 252);
@@ -95,9 +95,6 @@ input {
     display: flex;
     text-decoration: none;
 }
-#filtres a:visited {
-    color: black;
-}
 #filtre_par_categorie, .icon_par_categorie, #filtre_par_categorie {
     display: flex;
     margin-top: 2em;
@@ -152,9 +149,6 @@ header > p {
     margin: 0 1.5em 0 1.5em;
     font-weight: bold;
 }
-.icon_par_categorie > p:visited {
-    color: black;
-}
 
 /*Stylisation des deux première sections (hébergement à Marseille et les plus populaires)*/
 
@@ -176,9 +170,6 @@ header > p {
     display: flex;
     text-decoration: none;
     width: 30%;
-}
-#hebergements_a_marseille a:visited {
-    color: black;
 }
 .hebergements + p {
     font-weight: bold;
@@ -263,12 +254,6 @@ header > p {
     flex-direction: column;
     justify-content: space-between;
 }
-#populaires a {
-    text-decoration: none;
-}
-#populaires a:visited {
-    color: black;
-}
 .cote {
     display: flex;
     justify-content: space-between;
@@ -320,9 +305,6 @@ header > p {
 .activites p {
     padding: 0.5em 0;
     text-align: center;
-}
-.activites p:visited {
-    color: black;
 }
 .activites img {
     width: 100%;
@@ -393,10 +375,6 @@ footer div {
 footer ul {
     list-style-type: none;
     padding-left: 0;
-}
-footer a {
-    text-decoration: none;
-    color: black;
 }
 footer a:hover {
     border-bottom: 0.5px solid black;
